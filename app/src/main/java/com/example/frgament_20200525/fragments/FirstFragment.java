@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.example.frgament_20200525.R;
 import com.example.frgament_20200525.databinding.FragmentFirstBinding;
 
-public class FirstFragment extends Fragment {
+public class FirstFragment extends BaseFragment {
 
     FragmentFirstBinding binding;
 
@@ -31,6 +31,12 @@ public class FirstFragment extends Fragment {
 
 //        액티비티의 onCreate처럼 여러가지 기능 작성.
 
+
+
+    }
+
+    @Override
+    public void setupEvnets() {
         binding.okBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,6 +44,10 @@ public class FirstFragment extends Fragment {
                 binding.myTxt.setText(input);
             }
         });
+    }
+
+    @Override
+    public void setValues() {
 
     }
 }
