@@ -14,5 +14,11 @@
             android:layout_height="200dp"
             class="com.example.frgament_20200525.fragments.FirstFragment"/>
 
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            class="com.example.frgament_20200525.fragments.SecondFragment"
+            android:tag="두번째프래그먼트"/>
+
     </LinearLayout>
 </layout>
